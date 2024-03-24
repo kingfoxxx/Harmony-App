@@ -1,0 +1,37 @@
+{% extends 'harmony/base.html' %}
+{% block content %}
+
+  <div class="App__main-view">
+    <div class="App__top-gradient"></div>
+    <div class="App__header-placeholder"></div>
+    <section class="App__section App__quick-links">
+      <h1>Favorite Artists</h1>
+     
+    </section>
+    <section class="App__section App__your-shows">
+      <div class="App__section-header">
+        <h3>Your shows</h3>
+        
+      </div>
+      <div class="App__section-grid-container">
+        {% for artist in artists %}
+        <a href="{{ artist.external_urls.spotify }}" target="_blank">
+        <div class="App__section-grid-item">
+            {% if artist.images %}
+            <div class="featured-image" style="background-image: url('{{ artist.images.0.url }}')"></div> <!-- Pick the first image URL -->
+            {% else %}
+            <div class="featured-image"></div> <!-- Placeholder if no image available -->
+            {% endif %}
+            <h3>{{ artist.name }}</h3>
+            <span>Followers: {{ artist.followers.total }}</span>
+        </div>
+        </a>
+        {% endfor %}
+    </div>
+    </section>
+    
+  </div>
+
+{% endblock %}
+
+
