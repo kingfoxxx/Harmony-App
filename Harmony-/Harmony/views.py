@@ -100,7 +100,7 @@ def myartists(request):
 
 def search(request):
     if request.user:
-        if "q" in request.GET:
+        if 'q' in request.GET:
             term = request.GET.get("q")
             token = get_token()
             headers = get_auth_header(token)
