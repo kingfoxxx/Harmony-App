@@ -60,7 +60,7 @@ $(document).ready(function () {
       });
   });
 
-  
+ //this navigates logout from home page of application 
 });
 $('#logout').on('click',(e)=>{
   e.preventDefault();
