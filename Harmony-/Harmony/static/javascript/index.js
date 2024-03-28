@@ -8,7 +8,7 @@
         $(".navbar-collapse").collapse('hide');
       });
       
-      // CUSTOM LINK
+      // CUSTOM LINK for landing page
       $('.smoothscroll').click(function(){
         var el = $(this).attr('href');
         var elWrapped = $(el);
