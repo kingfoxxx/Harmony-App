@@ -2,7 +2,7 @@ from.import views
 from django.urls import path
 
 
-
+#all url links for my application authentications
 urlpatterns = [
     path('home', views.home, name='home-page'),
     path('signup', views.signup, name='signup'),
