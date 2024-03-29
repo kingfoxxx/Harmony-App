@@ -82,11 +82,6 @@ class SignIn(models.Model):
 #     return render(request, 'signup.html')
 
 
-# class CustomLoginView(LoginView):
-#     template_name = 'login.html'
-#     # Additional customizations for login view
-
-
 # def home(request):
 #     # Your home view logic here
 #     return render(request, 'home.html')
