@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    // Get the current page URL
+    // Get the current or prevailing page URL
     var currentPage = window.location.href;
     var menuItems = document.querySelectorAll('.menu-item');
     
