@@ -15,7 +15,7 @@ import base64
 from requests import post, get
 
 
-# Create your views here.
+# Create your views here and getting client token.
 
 def get_token():
     client_id = "34feb190cc0f4876b1b962313ac49396"
